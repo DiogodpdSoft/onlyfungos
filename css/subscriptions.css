@@ -1,0 +1,60 @@
+.subscriptions-container {
+    padding: 4rem 5%;
+    text-align: center;
+    margin-top: 80px;
+}
+.subscriptions-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+.plan {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.plan h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.plan .price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.plan .price span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+.plan ul li {
+    margin-bottom: 0.8rem;
+}
+.plan button {
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 1.1rem;
+}
+.plan button:hover {
+    background: var(--secondary-color);
+}
+.plan.gold {
+    border: 3px solid #ffd700; /* Gold color for the premium plan */
+}
