@@ -1,0 +1,58 @@
+.profile-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--white);
+    margin-top: 80px;
+}
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+    border: 5px solid var(--primary-color);
+}
+.profile-header h1 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem 5%;
+}
+.photo-grid .photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.subscribe-prompt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.photo-item:hover .subscribe-prompt {
+    opacity: 1;
+}
+.subscribe-prompt h3 {
+    margin-bottom: 1rem;
+}
